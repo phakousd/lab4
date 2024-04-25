@@ -100,6 +100,7 @@ public class PostgresDBAdapter extends AbstractDBAdapter {
 
     @Override
     public List<Film> getFilmsForActor(Actor actor) {
+
         //Create a string with the sql statement
         String sql = "select *\n" +
                 "from actor, film_actor, film\n" +
